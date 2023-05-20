@@ -1,8 +1,11 @@
+.landingpage_section{
+    height: 100vh;
+}
 .landing_container{
     color: var(--color-white);
     margin: 1.5rem;
     padding: 10px;
-    /* height: 50vh; */
+    height: 50vh;
     background-image: url('https://images.pexels.com/photos/6498295/pexels-photo-6498295.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +20,7 @@
 .testnet_transactons{
     /* border: 1px solid red;  */
     /* display: flex; */
+    margin-top: 6rem;
     align-items: center;
     text-align: center;
     justify-content: space-between;

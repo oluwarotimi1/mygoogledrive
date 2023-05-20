@@ -1,0 +1,27 @@
+.howitworks_section{
+    height: 50vh;
+}
+.howitworks_card{
+    min-height: 150px;
+    height: 200px;
+}
+.howitworks_cardbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+Body{
+    display: flex;
+    flex-direction: column;
+}
+.card_title{
+    display: flex;
+    justify-content: space-between;
+}
+.card_title h1{
+    padding: 0rem 2rem 0rem 0rem;
+}
+
+.howitworks_btn{
+    width: 100%;
+}

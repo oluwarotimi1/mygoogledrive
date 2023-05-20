@@ -3,6 +3,7 @@ import Navabar from '../../comps/navbar/Navabar'
 import LandingPage from '../../comps/landingpage/LandingPage'
 import styles from './home.module.css'
 import HowItWorks from '../../comps/howitworks/HowItWorks'
+import Products from '../../comps/products/Products'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Navabar />
         <LandingPage />
         <HowItWorks />
+        <Products />
 
     </div>
   )

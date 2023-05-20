@@ -4,14 +4,14 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const LandingPage = () => {
   return (
-    <>
+    <section className={styles.landingpage_section}>
       <div className={styles.landing_container}>
-        <h3>Vibranium Protocol</h3>
+        <h3 style={{paddingTop: "20px"}}>Vibranium Protocol</h3>
         <p>
           Vibranum Protocol welcomes all Web 3.0 users to join in the testing network and
           products developed on our blockchain.
         </p>
-        <h1 style={{maxWidth:"400px"}}>Join the Testnet of Venom Blockchain</h1>
+        <h1 style={{maxWidth:"400px"}}>Join the Testnet of Vibranium Protocol</h1>
       </div>
       <Container className={styles.testnet_transactons}>
         <Row>
@@ -29,7 +29,7 @@ const LandingPage = () => {
             </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };
 

@@ -1,0 +1,5 @@
+.products_section{
+    height: 100vh;
+    background: var(--color-dark);
+    padding: 2rem 1rem;
+}
