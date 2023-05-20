@@ -1,0 +1,26 @@
+.landing_container{
+    color: var(--color-white);
+    margin: 1.5rem;
+    padding: 10px;
+    /* height: 50vh; */
+    background-image: url('https://images.pexels.com/photos/6498295/pexels-photo-6498295.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing_container h3{
+    color: var(--color-white);
+    margin-bottom: 5rem;
+}
+.landing_container h1{
+    color: white;
+}
+.testnet_transactons{
+    /* border: 1px solid red;  */
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.testnet_transactons p{
+    color: var(--color-text);
+}

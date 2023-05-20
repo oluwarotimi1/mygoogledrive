@@ -1,0 +1,5 @@
+.home_container{
+    height: 100vh;
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}

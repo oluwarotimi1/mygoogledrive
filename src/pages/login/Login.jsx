@@ -6,15 +6,19 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormContainer from "../../comps/FormContainer";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const Navigate = useNavigate("")
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
-
+  const onSubmit = (data) => {
+    Navigate("/home")
+    console.log(data);
+  }
   return (
     <div className={styles.form_container}>
       <FormContainer>
@@ -31,8 +35,12 @@ const Login = () => {
               {...register("mail", { required: "Email Address is required" })}
               aria-invalid={errors.mail ? "true" : "false"}
             />
-              {errors.mail && <p role="alert" className={styles.form_error}>{errors.mail?.message}</p>}
-           
+            {errors.mail && (
+              <p role="alert" className={styles.form_error}>
+                {errors.mail?.message}
+              </p>
+            )}
+
             <Form.Text className="text-muted">
               *We'll never share your email with anyone else*
             </Form.Text>
@@ -45,8 +53,15 @@ const Login = () => {
                 <Link to="/">Forgot Password?</Link>
               </span>
             </Form.Label>
-            <input type="password" {...register("password", {required: "Password is required"})}/>
-            {errors.password && <p role="alert" className={styles.form_error}>{errors.password?.message}</p>}
+            <input
+              type="password"
+              {...register("password", { required: "Password is required" })}
+            />
+            {errors.password && (
+              <p role="alert" className={styles.form_error}>
+                {errors.password?.message}
+              </p>
+            )}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Save password" />
