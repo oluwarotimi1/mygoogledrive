@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./login.module.css";
 import { useForm } from "react-hook-form";
-import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormContainer from "../../comps/FormContainer";
@@ -9,16 +8,16 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const Navigate = useNavigate("")
+  const Navigate = useNavigate("");
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    Navigate("/home")
+    Navigate("/home");
     console.log(data);
-  }
+  };
   return (
     <div className={styles.form_container}>
       <FormContainer>

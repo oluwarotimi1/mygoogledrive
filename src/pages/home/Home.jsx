@@ -4,6 +4,9 @@ import LandingPage from '../../comps/landingpage/LandingPage'
 import styles from './home.module.css'
 import HowItWorks from '../../comps/howitworks/HowItWorks'
 import Products from '../../comps/products/Products'
+import Projects from '../../comps/projects/Projects'
+import BuildOn from '../../comps/buildon/BuildOn'
+import Faq from '../../comps/faq/Faq'
 
 const Home = () => {
   return (
@@ -12,6 +15,9 @@ const Home = () => {
         <LandingPage />
         <HowItWorks />
         <Products />
+        <Projects />
+        <BuildOn />
+        <Faq />
 
     </div>
   )

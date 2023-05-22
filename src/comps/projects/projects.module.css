@@ -1,0 +1,35 @@
+.projects_section{
+    padding: 2rem;
+    background: var(--color-dark);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.projects_title{
+    color: var(--color-primary);
+}
+.projects_card{
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 1rem;
+    width: 300px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem
+}
+.project_text{
+    color: var(--color-text);
+}
+.website_icon{
+    font-size: 1.5rem;
+}
+.website_icon:hover{
+    scale: 1.2;
+}

@@ -1,18 +1,28 @@
 .howitworks_section{
-    height: 50vh;
+    /* height: 50vh; */
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.howitworks_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.howitworks_section h2{
+    padding-top: 1rem;
 }
 .howitworks_card{
     min-height: 150px;
     height: 200px;
+    margin-bottom: 1rem;
 }
 .howitworks_cardbody{
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
-}
-Body{
-    display: flex;
-    flex-direction: column;
 }
 .card_title{
     display: flex;

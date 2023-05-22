@@ -1,0 +1,9 @@
+.faq_container{
+    padding: 2rem 0;
+}
+.faq_header{
+    color: var(--color-primary);
+}
+.faq_answer{
+    color: var(--color-text);
+}
